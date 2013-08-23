@@ -2,5 +2,16 @@
 <c2eventsheet>
     <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
     <name>Ludum dare 27</name>
-    <events />
+    <events>
+        <event-block sid="3280113981693917">
+            <conditions>
+                <condition id="-1" name="Every tick" sid="9035149567332038" type="System" />
+            </conditions>
+            <actions>
+                <action id="-5" name="Scroll to X" sid="1798087321794522" type="System">
+                    <param id="0" name="X">0</param>
+                </action>
+            </actions>
+        </event-block>
+    </events>
 </c2eventsheet>
