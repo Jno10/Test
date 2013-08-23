@@ -1,8 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <c2layout>
     <name>Layout 1</name>
-    <sid>2999563471834694</sid>
-    <event-sheet>Ludum dare 27</event-sheet>
+    <sid>4377783248240957</sid>
+    <event-sheet>Event sheet JC </event-sheet>
     <size>
         <width>1280</width>
         <height>1024</height>
@@ -13,7 +13,7 @@
     </margins>
     <unbounded-scrolling>0</unbounded-scrolling>
     <layers>
-        <layer name="Layer 0" sid="6994030242311864">
+        <layer name="Layer 0" sid="2154136212768581">
             <initially-visible>1</initially-visible>
             <background-color>255,255,255</background-color>
             <transparent>0</transparent>

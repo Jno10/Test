@@ -1,14 +1,14 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <c2project>
-    <name>New project</name>
+    <name>LudamDare24-08</name>
     <description></description>
     <version>1.0.0.0</version>
     <author></author>
     <author-email></author-email>
     <author-website>http://</author-website>
     <app-id>com.mycompany.myapp</app-id>
-    <unique-id>e4ut7mp55hfc</unique-id>
-    <saved-with-version>13200</saved-with-version>
+    <unique-id>2rx0e0e70i9mw</unique-id>
+    <saved-with-version>13900</saved-with-version>
     <used-plugins />
     <used-behaviors />
     <used-effects />
@@ -38,10 +38,20 @@
         <layout>Layout 1.xml</layout>
     </layout-folder>
     <event-folder expanded="1">
-        <event-sheet>Event sheet 1.xml</event-sheet>
+        <event-sheet>Event sheet JC .xml</event-sheet>
+        <event-sheet>Event sheet Peter.xml</event-sheet>
+        <event-sheet>Event sheet Lolo.xml</event-sheet>
     </event-folder>
     <global-instances />
     <sounds-folder expanded="1" />
     <music-folder expanded="1" />
-    <files-folder expanded="1" />
+    <files-folder expanded="1">
+        <file-folder expanded="0" name="Icons">
+            <file name="icon-16.png" />
+            <file name="icon-32.png" />
+            <file name="icon-114.png" />
+            <file name="icon-128.png" />
+            <file name="loading-logo.png" />
+        </file-folder>
+    </files-folder>
 </c2project>
