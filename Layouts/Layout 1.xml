@@ -175,13 +175,13 @@
                     <effect-fallback>0</effect-fallback>
                     <world>
                         <x>41</x>
-                        <y>423</y>
+                        <y>417</y>
                         <z>0</z>
-                        <width>23</width>
-                        <height>36</height>
+                        <width>41</width>
+                        <height>51</height>
                         <depth>0</depth>
-                        <hotspotX>0.5</hotspotX>
-                        <hotspotY>0.5</hotspotY>
+                        <hotspotX>0.51219511</hotspotX>
+                        <hotspotY>0.509803951</hotspotY>
                         <angle>0</angle>
                         <opacity>1</opacity>
                     </world>

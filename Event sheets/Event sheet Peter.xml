@@ -18,6 +18,7 @@
                     <param id="1" name="Label">&quot;Countdown&quot;</param>
                     <param id="2" name="State">0</param>
                 </action>
+                <action id="2" name="Stop" sid="5818487009433253" type="Sprite" />
             </actions>
         </event-block>
         <event-block sid="312854340446879">
