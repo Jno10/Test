@@ -83,6 +83,7 @@
             <plugin id="Sprite" />
             <instance-variables>
                 <instance-variable name="DirectionControl" sid="2615872811256233" type="string" />
+                <instance-variable name="SpeedUp" sid="9782074009952364" type="number" />
             </instance-variables>
             <behaviors>
                 <behavior-type name="Bullet" sid="1479147028791811">

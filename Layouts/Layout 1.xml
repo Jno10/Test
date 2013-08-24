@@ -157,6 +157,7 @@
                     </properties>
                     <instance-variables>
                         <DirectionControl></DirectionControl>
+                        <SpeedUp>1</SpeedUp>
                     </instance-variables>
                     <behavior-instances>
                         <behavior-instance type="Bullet">

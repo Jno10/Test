@@ -41,7 +41,7 @@
                 </condition>
             </conditions>
             <actions>
-                <action id="0" name="Alert" sid="6264884488551258" type="Browser">
+                <action disabled="1" id="0" name="Alert" sid="6264884488551258" type="Browser">
                     <param id="0" name="Message">&quot;BOOM TA CHATTE LOLO&quot;</param>
                 </action>
                 <action id="9" name="Pause counter" sid="7465362242100357" type="TimeManager">
@@ -55,47 +55,97 @@
         </event-block>
         <event-group description="" sid="2890584200832184" title="Player1">
             <sub-events>
-                <event-block sid="3441929624286523">
+                <event-block sid="3908798329152214">
                     <conditions>
-                        <condition id="0" name="On key pressed" sid="969614269052781" type="Keyboard">
+                        <condition id="0" name="On key pressed" sid="2828039308914829" type="Keyboard">
                             <param id="0" name="Key">39 (Right arrow)</param>
                         </condition>
-                        <condition id="-7" name="Compare instance variable" sid="736204122051424" type="Sprite">
-                            <param id="0" name="Instance variable">DirectionControl</param>
-                            <param id="1" name="Comparison">1</param>
-                            <param id="2" name="Value">&quot;Left&quot;</param>
-                        </condition>
                     </conditions>
-                    <actions>
-                        <action id="-17" name="Move forward" sid="5451035075209038" type="Sprite">
-                            <param id="0" name="Distance">10</param>
-                        </action>
-                        <action id="-10" name="Set value" sid="8419673355525984" type="Sprite">
-                            <param id="0" name="Instance variable">DirectionControl</param>
-                            <param id="1" name="Value">&quot;Right&quot;</param>
-                        </action>
-                    </actions>
+                    <actions />
+                    <sub-events>
+                        <event-block sid="4722923280412855">
+                            <conditions>
+                                <condition id="-7" name="Compare instance variable" sid="9210980538750454" type="Sprite">
+                                    <param id="0" name="Instance variable">DirectionControl</param>
+                                    <param id="1" name="Comparison">1</param>
+                                    <param id="2" name="Value">&quot;Left&quot;</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-17" name="Move forward" sid="5451035075209038" type="Sprite">
+                                    <param id="0" name="Distance">10</param>
+                                </action>
+                                <action id="-10" name="Set value" sid="8419673355525984" type="Sprite">
+                                    <param id="0" name="Instance variable">DirectionControl</param>
+                                    <param id="1" name="Value">&quot;Left&quot;</param>
+                                </action>
+                                <action disabled="1" id="0" name="Alert" sid="9424719678759789" type="Browser">
+                                    <param id="0" name="Message">&quot;Right &quot;&amp; Sprite.DirectionControl</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="1645784595706598">
+                            <conditions>
+                                <condition id="-7" name="Compare instance variable" sid="2169462035343063" type="Sprite">
+                                    <param id="0" name="Instance variable">DirectionControl</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">&quot;Left&quot;</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-10" name="Set value" sid="5550384142917907" type="Sprite">
+                                    <param id="0" name="Instance variable">SpeedUp</param>
+                                    <param id="1" name="Value">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
                 </event-block>
                 <event-block sid="1086922840183497">
                     <conditions>
                         <condition id="0" name="On key pressed" sid="6470967790826512" type="Keyboard">
                             <param id="0" name="Key">37 (Left arrow)</param>
                         </condition>
-                        <condition id="-7" name="Compare instance variable" sid="1461328249980092" type="Sprite">
-                            <param id="0" name="Instance variable">DirectionControl</param>
-                            <param id="1" name="Comparison">1</param>
-                            <param id="2" name="Value">&quot;Right&quot;</param>
-                        </condition>
                     </conditions>
-                    <actions>
-                        <action id="-17" name="Move forward" sid="2570079637397022" type="Sprite">
-                            <param id="0" name="Distance">10</param>
-                        </action>
-                        <action id="-10" name="Set value" sid="8048136361568394" type="Sprite">
-                            <param id="0" name="Instance variable">DirectionControl</param>
-                            <param id="1" name="Value">&quot;Left&quot;</param>
-                        </action>
-                    </actions>
+                    <actions />
+                    <sub-events>
+                        <event-block sid="7975806877046021">
+                            <conditions>
+                                <condition id="-7" name="Compare instance variable" sid="6545129711770704" type="Sprite">
+                                    <param id="0" name="Instance variable">DirectionControl</param>
+                                    <param id="1" name="Comparison">1</param>
+                                    <param id="2" name="Value">&quot;Right&quot;</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-17" name="Move forward" sid="2570079637397022" type="Sprite">
+                                    <param id="0" name="Distance">10</param>
+                                </action>
+                                <action id="-10" name="Set value" sid="8048136361568394" type="Sprite">
+                                    <param id="0" name="Instance variable">DirectionControl</param>
+                                    <param id="1" name="Value">&quot;Right&quot;</param>
+                                </action>
+                                <action disabled="1" id="0" name="Alert" sid="7713228219582847" type="Browser">
+                                    <param id="0" name="Message">&quot;Left &quot;&amp; Sprite.DirectionControl</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="9839292183346322">
+                            <conditions>
+                                <condition id="-7" name="Compare instance variable" sid="342546791637379" type="Sprite">
+                                    <param id="0" name="Instance variable">DirectionControl</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">&quot;Right&quot;</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-10" name="Set value" sid="8950355256915462" type="Sprite">
+                                    <param id="0" name="Instance variable">SpeedUp</param>
+                                    <param id="1" name="Value">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
                 </event-block>
             </sub-events>
         </event-group>
