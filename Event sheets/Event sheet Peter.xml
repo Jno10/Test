@@ -3,6 +3,7 @@
     <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
     <name>Event sheet Peter</name>
     <events>
+        <variable constant="0" name="TileSize" sid="3841149108131213" static="0" type="number">32</variable>
         <include>Event sheet Lolo</include>
         <include>Event sheet JC </include>
         <event-block sid="9184628896276968">
@@ -73,8 +74,11 @@
                                 </condition>
                             </conditions>
                             <actions>
-                                <action id="-17" name="Move forward" sid="5451035075209038" type="Sprite">
+                                <action disabled="1" id="-17" name="Move forward" sid="5451035075209038" type="Sprite">
                                     <param id="0" name="Distance">10</param>
+                                </action>
+                                <action behavior="Bullet" id="0" name="Set speed" sid="6851063828560449" type="Sprite">
+                                    <param id="0" name="Speed">TileSize/Self.MoveDuration</param>
                                 </action>
                                 <action id="-10" name="Set value" sid="8419673355525984" type="Sprite">
                                     <param id="0" name="Instance variable">DirectionControl</param>
@@ -82,6 +86,12 @@
                                 </action>
                                 <action disabled="1" id="0" name="Alert" sid="9424719678759789" type="Browser">
                                     <param id="0" name="Message">&quot;Right &quot;&amp; Sprite.DirectionControl</param>
+                                </action>
+                                <action id="-16" name="Wait" sid="2058447400389723" type="System">
+                                    <param id="0" name="Seconds">Sprite.MoveDuration</param>
+                                </action>
+                                <action behavior="Bullet" id="0" name="Set speed" sid="7330567853586491" type="Sprite">
+                                    <param id="0" name="Speed">0</param>
                                 </action>
                             </actions>
                         </event-block>
@@ -95,8 +105,8 @@
                             </conditions>
                             <actions>
                                 <action id="-10" name="Set value" sid="5550384142917907" type="Sprite">
-                                    <param id="0" name="Instance variable">SpeedUp</param>
-                                    <param id="1" name="Value">1</param>
+                                    <param id="0" name="Instance variable">MoveDuration</param>
+                                    <param id="1" name="Value">0.3</param>
                                 </action>
                             </actions>
                         </event-block>
@@ -119,8 +129,11 @@
                                 </condition>
                             </conditions>
                             <actions>
-                                <action id="-17" name="Move forward" sid="2570079637397022" type="Sprite">
+                                <action disabled="1" id="-17" name="Move forward" sid="2570079637397022" type="Sprite">
                                     <param id="0" name="Distance">10</param>
+                                </action>
+                                <action behavior="Bullet" id="0" name="Set speed" sid="4745978436355415" type="Sprite">
+                                    <param id="0" name="Speed">TileSize/Self.MoveDuration</param>
                                 </action>
                                 <action id="-10" name="Set value" sid="8048136361568394" type="Sprite">
                                     <param id="0" name="Instance variable">DirectionControl</param>
@@ -128,6 +141,12 @@
                                 </action>
                                 <action disabled="1" id="0" name="Alert" sid="7713228219582847" type="Browser">
                                     <param id="0" name="Message">&quot;Left &quot;&amp; Sprite.DirectionControl</param>
+                                </action>
+                                <action id="-16" name="Wait" sid="4746279331768707" type="System">
+                                    <param id="0" name="Seconds">Sprite.MoveDuration</param>
+                                </action>
+                                <action behavior="Bullet" id="0" name="Set speed" sid="582878539407591" type="Sprite">
+                                    <param id="0" name="Speed">0</param>
                                 </action>
                             </actions>
                         </event-block>
@@ -141,12 +160,30 @@
                             </conditions>
                             <actions>
                                 <action id="-10" name="Set value" sid="8950355256915462" type="Sprite">
-                                    <param id="0" name="Instance variable">SpeedUp</param>
-                                    <param id="1" name="Value">1</param>
+                                    <param id="0" name="Instance variable">MoveDuration</param>
+                                    <param id="1" name="Value">0.3</param>
                                 </action>
                             </actions>
                         </event-block>
                     </sub-events>
+                </event-block>
+                <event-block sid="2531551591884465">
+                    <conditions>
+                        <condition id="1" name="Is overlapping another object" sid="783238235491364" type="Sprite">
+                            <param id="0" name="Object">CamSprite</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action behavior="Bullet" id="0" name="Set speed" sid="3771201334995815" type="CamSprite">
+                            <param id="0" name="Speed">TileSize / Sprite.MoveDuration</param>
+                        </action>
+                        <action id="-16" name="Wait" sid="8017319279488575" type="System">
+                            <param id="0" name="Seconds">Sprite.MoveDuration</param>
+                        </action>
+                        <action behavior="Bullet" id="0" name="Set speed" sid="6200094022584106" type="CamSprite">
+                            <param id="0" name="Speed">0</param>
+                        </action>
+                    </actions>
                 </event-block>
             </sub-events>
         </event-group>
