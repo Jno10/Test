@@ -3,6 +3,8 @@
     <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
     <name>Event sheet Peter</name>
     <events>
+        <include>Event sheet Lolo</include>
+        <include>Event sheet JC </include>
         <event-block sid="9184628896276968">
             <conditions>
                 <condition id="-2" name="On start of layout" sid="6639424993017282" type="System" />
@@ -24,7 +26,7 @@
             </conditions>
             <actions>
                 <action id="0" name="Set text" sid="9098254740639255" type="Countdown_text">
-                    <param id="0" name="Text">TimeManager.HHMMSSMM(&quot;Countdown&quot;)</param>
+                    <param id="0" name="Text">TimeManager.SSMM(&quot;Countdown&quot;)</param>
                 </action>
                 <action id="0" name="Set text" sid="4905131424863846" type="FPS_text">
                     <param id="0" name="Text">&quot;FPS:&quot; &amp;fps</param>
@@ -51,5 +53,51 @@
                 </action>
             </actions>
         </event-block>
+        <event-group description="" sid="2890584200832184" title="Player1">
+            <sub-events>
+                <event-block sid="3441929624286523">
+                    <conditions>
+                        <condition id="0" name="On key pressed" sid="969614269052781" type="Keyboard">
+                            <param id="0" name="Key">39 (Right arrow)</param>
+                        </condition>
+                        <condition id="-7" name="Compare instance variable" sid="736204122051424" type="Sprite">
+                            <param id="0" name="Instance variable">DirectionControl</param>
+                            <param id="1" name="Comparison">1</param>
+                            <param id="2" name="Value">&quot;Left&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-17" name="Move forward" sid="5451035075209038" type="Sprite">
+                            <param id="0" name="Distance">10</param>
+                        </action>
+                        <action id="-10" name="Set value" sid="8419673355525984" type="Sprite">
+                            <param id="0" name="Instance variable">DirectionControl</param>
+                            <param id="1" name="Value">&quot;Right&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="1086922840183497">
+                    <conditions>
+                        <condition id="0" name="On key pressed" sid="6470967790826512" type="Keyboard">
+                            <param id="0" name="Key">37 (Left arrow)</param>
+                        </condition>
+                        <condition id="-7" name="Compare instance variable" sid="1461328249980092" type="Sprite">
+                            <param id="0" name="Instance variable">DirectionControl</param>
+                            <param id="1" name="Comparison">1</param>
+                            <param id="2" name="Value">&quot;Right&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-17" name="Move forward" sid="2570079637397022" type="Sprite">
+                            <param id="0" name="Distance">10</param>
+                        </action>
+                        <action id="-10" name="Set value" sid="8048136361568394" type="Sprite">
+                            <param id="0" name="Instance variable">DirectionControl</param>
+                            <param id="1" name="Value">&quot;Left&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
     </events>
 </c2eventsheet>

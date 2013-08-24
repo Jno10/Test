@@ -12,9 +12,16 @@
     <used-plugins>
         <plugin author="Scirra" id="Browser" version="1">Browser</plugin>
         <plugin author="Mikael Nilsson" id="CAMFTimeManager" version="1.090000033">Time Manager</plugin>
+        <plugin author="Scirra" id="Keyboard" version="1">Keyboard</plugin>
+        <plugin author="Scirra" id="Sprite" version="1">Sprite</plugin>
         <plugin author="Scirra" id="Text" version="1">Text</plugin>
+        <plugin author="Scirra" id="gamepad" version="1">Gamepad</plugin>
     </used-plugins>
-    <used-behaviors />
+    <used-behaviors>
+        <behavior author="Scirra" id="Anchor" version="1">Anchor</behavior>
+        <behavior author="Scirra" id="Bullet" version="1">Bullet</behavior>
+        <behavior author="Scirra" id="solid" version="1">Solid</behavior>
+    </used-behaviors>
     <used-effects />
     <configurations>
         <configuration exporter-descname="HTML5" exporter-id="html5" name="HTML5" />
@@ -39,6 +46,11 @@
     <object-folder expanded="1">
         <object-type name="Countdown_text" sid="3030994352920332">
             <plugin id="Text" />
+            <behaviors>
+                <behavior-type name="Anchor" sid="3974873354336804">
+                    <behavior id="Anchor" />
+                </behavior-type>
+            </behaviors>
         </object-type>
         <object-type name="TimeManager" sid="740950955071949">
             <plugin id="CAMFTimeManager" />
@@ -48,6 +60,59 @@
         </object-type>
         <object-type name="FPS_text" sid="8410651870876753">
             <plugin id="Text" />
+            <behaviors>
+                <behavior-type name="Anchor" sid="4641342996419996">
+                    <behavior id="Anchor" />
+                </behavior-type>
+            </behaviors>
+        </object-type>
+        <object-type name="ground" sid="4735784286242594">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Solid" sid="5850671212350327">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder expanded="1">
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="448132264362023" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite" sid="5194147279231296">
+            <plugin id="Sprite" />
+            <instance-variables>
+                <instance-variable name="DirectionControl" sid="2615872811256233" type="string" />
+            </instance-variables>
+            <behaviors>
+                <behavior-type name="Bullet" sid="1479147028791811">
+                    <behavior id="Bullet" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder expanded="1">
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="8748708781180593" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite2" sid="5833043923725052">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Solid" sid="3414860722582941">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder expanded="1">
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="4554136215115079" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Keyboard" sid="2490536867720632">
+            <plugin id="Keyboard" />
+        </object-type>
+        <object-type name="Gamepad" sid="7519647256917497">
+            <plugin id="gamepad" />
         </object-type>
     </object-folder>
     <families />
@@ -62,6 +127,12 @@
     <global-instances>
         <global-instance type="TimeManager" uid="1" />
         <global-instance type="Browser" uid="2" />
+        <global-instance type="Keyboard" uid="7" />
+        <global-instance type="Gamepad" uid="8">
+            <properties>
+                <analog-deadzone>25</analog-deadzone>
+            </properties>
+        </global-instance>
     </global-instances>
     <sounds-folder expanded="1" />
     <music-folder expanded="1" />
