@@ -2,5 +2,54 @@
 <c2eventsheet>
     <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
     <name>Event sheet Peter</name>
-    <events />
+    <events>
+        <event-block sid="9184628896276968">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="6639424993017282" type="System" />
+            </conditions>
+            <actions>
+                <action id="-13" name="Set time scale" sid="1287932325844923" type="System">
+                    <param id="0" name="Time scale">1.0</param>
+                </action>
+                <action id="0" name="Time countdown" sid="6428262838333139" type="TimeManager">
+                    <param id="0" name="Countdown time">10000</param>
+                    <param id="1" name="Label">&quot;Countdown&quot;</param>
+                    <param id="2" name="State">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="312854340446879">
+            <conditions>
+                <condition id="-1" name="Every tick" sid="7218948536149543" type="System" />
+            </conditions>
+            <actions>
+                <action id="0" name="Set text" sid="9098254740639255" type="Countdown_text">
+                    <param id="0" name="Text">TimeManager.HHMMSSMM(&quot;Countdown&quot;)</param>
+                </action>
+                <action id="0" name="Set text" sid="4905131424863846" type="FPS_text">
+                    <param id="0" name="Text">&quot;FPS:&quot; &amp;fps</param>
+                </action>
+            </actions>
+        </event-block>
+        <comment>Countdown finished</comment>
+        <event-block sid="3345602390380459">
+            <conditions>
+                <condition id="1" name="Is counter finished?" sid="2342220658498338" type="TimeManager">
+                    <param id="0" name="Label">&quot;Countdown&quot;</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="0" name="Alert" sid="6264884488551258" type="Browser">
+                    <param id="0" name="Message">&quot;BOOM TA CHATTE LOLO&quot;</param>
+                </action>
+                <action id="9" name="Pause counter" sid="7465362242100357" type="TimeManager">
+                    <param id="0" name="Label">&quot;Countdown&quot;</param>
+                    <param id="1" name="State">0</param>
+                </action>
+                <action id="10" name="Reset counter" sid="8193475069230007" type="TimeManager">
+                    <param id="0" name="Label">&quot;Countdown&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+    </events>
 </c2eventsheet>

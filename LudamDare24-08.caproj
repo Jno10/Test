@@ -9,7 +9,11 @@
     <app-id>com.mycompany.myapp</app-id>
     <unique-id>2rx0e0e70i9mw</unique-id>
     <saved-with-version>13900</saved-with-version>
-    <used-plugins />
+    <used-plugins>
+        <plugin author="Scirra" id="Browser" version="1">Browser</plugin>
+        <plugin author="Mikael Nilsson" id="CAMFTimeManager" version="1.090000033">Time Manager</plugin>
+        <plugin author="Scirra" id="Text" version="1">Text</plugin>
+    </used-plugins>
     <used-behaviors />
     <used-effects />
     <configurations>
@@ -32,7 +36,20 @@
         <prop name="Sampling">Linear</prop>
         <prop name="Use iOS retina display">All devices</prop>
     </configuration-settings>
-    <object-folder expanded="1" />
+    <object-folder expanded="1">
+        <object-type name="Countdown_text" sid="3030994352920332">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="TimeManager" sid="740950955071949">
+            <plugin id="CAMFTimeManager" />
+        </object-type>
+        <object-type name="Browser" sid="6273907628617485">
+            <plugin id="Browser" />
+        </object-type>
+        <object-type name="FPS_text" sid="8410651870876753">
+            <plugin id="Text" />
+        </object-type>
+    </object-folder>
     <families />
     <layout-folder expanded="1">
         <layout>Layout 1.xml</layout>
@@ -42,7 +59,10 @@
         <event-sheet>Event sheet Peter.xml</event-sheet>
         <event-sheet>Event sheet Lolo.xml</event-sheet>
     </event-folder>
-    <global-instances />
+    <global-instances>
+        <global-instance type="TimeManager" uid="1" />
+        <global-instance type="Browser" uid="2" />
+    </global-instances>
     <sounds-folder expanded="1" />
     <music-folder expanded="1" />
     <files-folder expanded="1">
