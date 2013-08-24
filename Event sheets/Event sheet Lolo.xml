@@ -2,5 +2,197 @@
 <c2eventsheet>
     <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
     <name>Event sheet Lolo</name>
-    <events />
+    <events>
+        <event-block sid="8217923958845957">
+            <conditions>
+                <condition id="-7" name="Compare instance variable" sid="3078830654365218" type="check">
+                    <param id="0" name="Instance variable">position</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">1</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-1" name="Set X" sid="4059942171909025" type="check">
+                    <param id="0" name="X">249</param>
+                </action>
+                <action id="-2" name="Set Y" sid="1071945934364181" type="check">
+                    <param id="0" name="Y">290</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="6399879064181818">
+            <conditions>
+                <condition id="-7" name="Compare instance variable" sid="7712922347558052" type="check">
+                    <param id="0" name="Instance variable">position</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">4</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-1" name="Set X" sid="1690292046994421" type="check">
+                    <param id="0" name="X">340</param>
+                </action>
+                <action id="-2" name="Set Y" sid="2913832490745946" type="check">
+                    <param id="0" name="Y">290</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="8022113402390556">
+            <conditions>
+                <condition id="0" name="On key pressed" sid="1190584901511172" type="Keyboard">
+                    <param id="0" name="Key">39 (Right arrow)</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-10" name="Set value" sid="964514448998751" type="check">
+                    <param id="0" name="Instance variable">position</param>
+                    <param id="1" name="Value">Self.position+1</param>
+                </action>
+            </actions>
+            <sub-events>
+                <event-block sid="4074715576888865">
+                    <conditions>
+                        <condition id="-7" name="Compare instance variable" sid="166342395114728" type="check">
+                            <param id="0" name="Instance variable">position</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">5</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-10" name="Set value" sid="1687700158933852" type="check">
+                            <param id="0" name="Instance variable">position</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="1323772817257977">
+            <conditions>
+                <condition id="-7" name="Compare instance variable" sid="4435553384590549" type="check">
+                    <param id="0" name="Instance variable">position</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">2</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-1" name="Set X" sid="3209189990767384" type="check">
+                    <param id="0" name="X">279</param>
+                </action>
+                <action id="-2" name="Set Y" sid="4812846677900237" type="check">
+                    <param id="0" name="Y">290</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="9529824278116883">
+            <conditions>
+                <condition id="-7" name="Compare instance variable" sid="3698372488660671" type="check">
+                    <param id="0" name="Instance variable">position</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">3</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-1" name="Set X" sid="1404912133315808" type="check">
+                    <param id="0" name="X">309</param>
+                </action>
+                <action id="-2" name="Set Y" sid="6620991869905519" type="check">
+                    <param id="0" name="Y">290</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="4026498828698242">
+            <conditions>
+                <condition id="0" name="On key pressed" sid="1570734443680094" type="Keyboard">
+                    <param id="0" name="Key">37 (Left arrow)</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-10" name="Set value" sid="3176561319880354" type="check">
+                    <param id="0" name="Instance variable">position</param>
+                    <param id="1" name="Value">Self.position-1</param>
+                </action>
+            </actions>
+            <sub-events>
+                <event-block sid="5449537751308216">
+                    <conditions>
+                        <condition id="-7" name="Compare instance variable" sid="8263702665306662" type="check">
+                            <param id="0" name="Instance variable">position</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">0</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-10" name="Set value" sid="1470987795185924" type="check">
+                            <param id="0" name="Instance variable">position</param>
+                            <param id="1" name="Value">4</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="269434885208647">
+            <conditions>
+                <condition id="6" name="On object clicked" sid="6827947916246572" type="Mouse">
+                    <param id="0" name="Mouse button">0</param>
+                    <param id="1" name="Click type">0</param>
+                    <param id="2" name="Object clicked">play</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-25" name="Go to layout (by name)" sid="9031838297150435" type="System">
+                    <param id="0" name="Layout">&quot;Layout 1&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="5645054606183068">
+            <conditions>
+                <condition id="0" name="On key pressed" sid="636070012471337" type="Keyboard">
+                    <param id="0" name="Key">13 (Return)</param>
+                </condition>
+                <condition id="-8" name="Is boolean instance variable set" sid="4241065373526636" type="play2">
+                    <param id="0" name="Instance variable">play</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-2" name="Go to layout" sid="4038900259362049" type="System">
+                    <param id="0" name="Layout">Layout 1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="770462726435437">
+            <conditions>
+                <condition id="0" name="On key pressed" sid="8241876471056581" type="Keyboard">
+                    <param id="0" name="Key">13 (Return)</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="0" name="Set local value" sid="1910684381078361" type="WebStorage">
+                    <param id="0" name="Key">&quot;players&quot;</param>
+                    <param id="1" name="Value">check.position</param>
+                </action>
+                <action id="-9" name="Destroy" sid="9462120414352603" type="check" />
+                <action id="-1" name="Set X" sid="8639737778670182" type="play2">
+                    <param id="0" name="X">293</param>
+                </action>
+                <action id="-2" name="Set Y" sid="5381776675288972" type="play2">
+                    <param id="0" name="Y">341</param>
+                </action>
+                <action id="-13" name="Set boolean" sid="2476429369460224" type="play2">
+                    <param id="0" name="Instance variable">play</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="3274981452325313">
+            <conditions>
+                <condition id="-1" name="Every tick" sid="8110219355943829" type="System" />
+            </conditions>
+            <actions>
+                <action id="0" name="Set text" sid="6169278434368488" type="Text">
+                    <param id="0" name="Text">WebStorage.LocalValue(&quot;players&quot;)</param>
+                </action>
+            </actions>
+        </event-block>
+    </events>
 </c2eventsheet>
